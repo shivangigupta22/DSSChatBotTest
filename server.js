@@ -24,7 +24,8 @@ bot.startRTM(err => {
 
 controller.hears(['hello(.*)','^hi$'], 'direct_message,direct_mention,mention', (bot, message) => {
 	var userid = message.user;
-	var name = users[userid].name;
+	var identity = users.info(userid);
+	var name=identity.name;
     bot.reply(message, 'Hello!! '+userid+' '+name+':wave:');
 });
 
