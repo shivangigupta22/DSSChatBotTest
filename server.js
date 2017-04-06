@@ -26,7 +26,7 @@ controller.hears(['hello(.*)','^hi$'], 'direct_message,direct_mention,mention', 
 	var username = message.user;
 	var id = username.identity;
 	var name = id.name;
-    bot.reply(message, 'Hello!! '+username+' '+ id +' '+name+':wave:');
+    bot.reply(message, 'Hello!! '+username+' '+name+':wave:');
 });
 
 controller.hears(['how are you(.*)','h r u(.*)','hru(.*)'], 'direct_message,direct_mention,mention', (bot, message) => {
