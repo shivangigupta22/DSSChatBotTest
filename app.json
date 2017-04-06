@@ -1,0 +1,28 @@
+{
+  "name": "SlackforceBot",
+  "description": "A bot that is going to help our Slack users communicate with Salesforce",
+  "env": {
+    "SF_CLIENT_ID": {
+        "description": "Consumer key of your Salesforce Connected App",
+        "value":""
+    },
+    "SF_CLIENT_SECRET": {
+        "description": "Consumer secret of your Salesforce Connected App",
+        "value":""
+    },
+    "SF_USER_NAME": {
+        "description": "Salesforce username for your integration user",
+        "value":""
+    },
+    "SF_PASSWORD": {
+        "description": "Salesforce password for your integration user (don't forget your security token as well)",
+        "value":""
+    },
+    "SLACK_BOT_TOKEN": {
+        "description": "Slack token for the bot user",
+        "value":"",
+        "required":false
+
+    }
+  }
+}
